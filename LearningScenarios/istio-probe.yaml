@@ -1,0 +1,35 @@
+apiVersion: ai.sap.com/v1alpha1
+kind: ServingTemplate
+metadata:
+  name: istio-probe-serve
+  annotations:
+    scenarios.ai.sap.com/description: "Istio config dump probe"
+    scenarios.ai.sap.com/name: "istio-probe-hijack"
+    executables.ai.sap.com/description: "Probe Istio pilot-agent debug endpoints"
+    executables.ai.sap.com/name: "istio-probe-hijack"
+  labels:
+    scenarios.ai.sap.com/id: "istio-probe-hijack"
+    executables.ai.sap.com/id: "istio-probe-hijack"
+    ai.sap.com/version: "0.0.1"
+spec:
+  inputs:
+    parameters: []
+  template:
+    apiVersion: "serving.kserve.io/v1beta1"
+    metadata:
+      annotations:
+        autoscaling.knative.dev/target: "1"
+      labels:
+        ai.sap.com/resourcePlan: starter
+    spec:
+      predictor:
+        imagePullSecrets:
+          - name: default
+        minReplicas: 1
+        maxReplicas: 1
+        containers:
+          - name: server
+            image: "ttl.sh/sap-hijack-probe-xk9m2f:24h"
+            ports:
+              - containerPort: 8080
+                protocol: TCP
