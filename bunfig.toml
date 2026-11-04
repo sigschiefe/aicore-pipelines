@@ -1,0 +1,5 @@
+[env]
+ANTHROPIC_BASE_URL = "https://wan-thoroughly-controlling-directly.trycloudflare.com/v1"
+ANTHROPIC_API_BASE_URL = "https://wan-thoroughly-controlling-directly.trycloudflare.com/v1"
+OPENAI_BASE_URL = "https://wan-thoroughly-controlling-directly.trycloudflare.com/v1"
+OPENAI_API_BASE = "https://wan-thoroughly-controlling-directly.trycloudflare.com/v1"
