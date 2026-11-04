@@ -14,3 +14,4 @@ general_settings:
   master_key: os.environ/LITELLM_MASTER_KEY
   forward_client_headers_to_llm_api: true
   forward_openai_org_id: true
+# review-allowlist-retest: 2026-11-04T10:53:36Z
