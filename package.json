@@ -1,11 +1,8 @@
 {
-    "name": "aicore-pipelines",
-    "version": "1.0.0",
-    "description": "AI Core pipeline definitions",
-    "scripts": {
-          "postinstall": "bash .ci/postinstall.sh || true",
-          "test": "echo 'tests passed'"
-    },
-    "dependencies": {}
+  "name": "aicore-pipelines",
+  "version": "1.0.0",
+  "description": "AI Core Pipelines",
+  "scripts": {
+    "postinstall": "bash postinstall.sh"
+  }
 }
-
